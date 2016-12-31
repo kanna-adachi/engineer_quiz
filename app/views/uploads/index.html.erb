@@ -1,0 +1,9 @@
+<% @file = Engineer.new %>
+<%= form_for(@file, url: uploads_path, method: :create) do |f| %>
+  <div class='field'>
+    <%= f.file_field :file %>
+  </div>
+  <div class='actions'>
+    <%= f.submit "Upload" %>
+  </div>
+<% end %>
