@@ -1,11 +1,2 @@
-## 下記コマンドを順に叩く
-- cd rails_template_rep
-- rm -rf .git/
-- mv rails_template_rep ◯(新しいアプリ名)
-- git init
-- vim .gitignore(/vendor/bundle/を追加)
-- bundle install --path vendor/bundle
-- spring stop
-- bin/spring
-- bundle exec rake db:create
-- rails server
+1. Add `password: 'YOUR_PASSWORD'` to `config/database.yml`
+2. Add `conf.token = 'YOUR_SLACK_TEAM_BOT_TOKEN'` to `app/controller/quiz_controller.rb`

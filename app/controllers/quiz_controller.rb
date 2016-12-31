@@ -10,7 +10,7 @@ config = YAML.load_file('./config/database.yml')
 ActiveRecord::Base.establish_connection(config['development'])
 
 Slack.configure do |conf|
-  conf.token = 'xoxb-122337496247-IR5Gox1VwwPH1UHr9tIx61Is'
+  conf.token = ''
 end
 
 client = Slack::RealTime::Client.new
